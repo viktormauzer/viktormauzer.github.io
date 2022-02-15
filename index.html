@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFFFF" />
+
+    <meta
+      name="description"
+      content="My name is Viktor, I come from Croatia and I'm actively learning
+    swift to become an iOS developer."
+    />
+
+    <meta
+      property="og:title"
+      content="Portfolio - Viktor Mauzer, iOS Developer"
+    />
+    <meta
+      property="og:description"
+      content="My name is Viktor, I come from Croatia and I'm actively learning
+      swift to become an iOS developer."
+    />
+    <meta
+      property="og:image"
+      content="https://viktorcoding.com/img/viktormauzer-dev-portfolio.png"
+    />
+    <meta property="og:url" content="https://viktorcoding.com/" />
+    <meta
+      property="og:site_name"
+      content="Portfolio - Viktor Mauzer, iOS Developer"
+    />
+
+    <link rel="apple-touch-icon" href="img/apple-icon.png" />
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio - Viktor Mauzer, iOS Developer</title>
+  </head>
+  <body ontouchstart="">
+    <header class="header">
+      <div class="header__button no__highlights">
+        <div class="header__ham">
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+        </div>
+      </div>
+      <div class="header__bg">&nbsp;</div>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <span>Portfolio</span>
+          <ul>
+            <li>
+              <a class="header__nav-link" href="/portfolio/open-weather.html"
+                >OpenWeather</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header__nav-item">
+          <span>menu</span>
+          <ul>
+            <li>
+              <a class="header__nav-link" href="/index.html">Home</a>
+            </li>
+            <li><a class="header__nav-link" href="about.html">About</a></li>
+            <li><a class="header__nav-link" href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="header__nav-item">
+          <span>Contact</span>
+          <ul>
+            <li>
+              <a
+                class="button button-white no__highlights"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://twitter.com/viktormauzer"
+              >
+                <svg class="button-icon">
+                  <use xlink:href="/icons/sprite.svg#vector-twitter"></use>
+                </svg>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <div class="button send-email button-white no__highlights">
+                <svg class="button-icon">
+                  <use xlink:href="/icons/sprite.svg#vector-mail"></use>
+                </svg>
+                Email Address
+              </div>
+              <div class="email-address"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img
+        src="img/decoration/grid-dots.png"
+        alt="grid-dots"
+        class="grid__dots"
+      />
+      <img
+        src="img/decoration/p-figure-large.png"
+        alt="p-figure-large"
+        class="p__figure-large"
+      />
+      <img
+        src="img/decoration/p-figure-small.png"
+        alt="p-figure-small"
+        class="p__figure-small"
+      />
+      <div class="hero__text">
+        <span class="hero__text-intro">Hi, I'm</span>
+        <h1>Viktor Mauzer</h1>
+        <span class="hero__text-desc">iOS Developer</span>
+        <img
+          src="img/decoration/line-dots.png"
+          alt="line-dots"
+          class="line__dots"
+        />
+      </div>
+      <div class="hero__cta">
+        <span>portfolio</span>
+        <div class="hero__cta-icon">
+          <svg class="hero__icon">
+            <use xlink:href="/icons/sprite.svg#vector-arrow"></use>
+          </svg>
+        </div>
+      </div>
+      <img src="img/decoration/ios.png" alt="ios" class="ios__image" />
+    </section>
+
+    <section class="open__weather">
+      <div class="open__weather-info">
+        <h2>OpenWeather</h2>
+        <p>
+          A Simple weather app made using OpenWeatherMap API for current weather
+          conditions. Users can search weather conditions by city name or by
+          tapping the location button to use their current location for fetching
+          weather.
+        </p>
+        <div class="open__weather-cta">
+          <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/openweather-UIKit"
+            class="github__button button button-white no__highlights"
+          >
+            <svg
+              class="github__button-icon open__weather-button-icon button-icon"
+            >
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg
+              class="github__button-icon open__weather-button-icon button-icon"
+            >
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          <a
+            href="/portfolio/open-weather.html"
+            class="button button-hollow-white no__highlights"
+            >more info</a
+          >
+        </div>
+        <img
+          src="img/decoration/p-figure-large.png"
+          alt="p-figure-large"
+          class="p__figure-large"
+        />
+        <img
+          src="img/decoration/p-figure-small.png"
+          alt="p-figure-small"
+          class="p__figure-small"
+        />
+      </div>
+      <div class="open__weather-slider slider">
+        <div class="slider__next slider__btn no__highlights">
+          <svg class="slider__next-icon slider__icon">
+            <use xlink:href="/icons/sprite.svg#vector-arrow"></use>
+          </svg>
+        </div>
+        <div class="slider__prev slider__btn no__highlights">
+          <svg class="slider__prev-icon slider__icon">
+            <use xlink:href="/icons/sprite.svg#vector-arrow"></use>
+          </svg>
+        </div>
+        <div class="open__weather-slider-container slider-container">
+          <img
+            class="slide lazy-img"
+            data-src="img/open-weather/clear.png"
+            src="img/open-weather/lazy.png"
+            alt="slide"
+          />
+          <img
+            class="slide lazy-img"
+            data-src="img/open-weather/clouds.png"
+            src="img/open-weather/lazy.png"
+            alt="slide"
+          />
+          <img
+            class="slide lazy-img"
+            data-src="img/open-weather/fog.png"
+            src="img/open-weather/lazy.png"
+            alt="slide"
+          />
+          <img
+            class="slide lazy-img"
+            data-src="img/open-weather/snow.png"
+            src="img/open-weather/lazy.png"
+            alt="slide"
+          />
+        </div>
+        <div class="slider__indicator"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <span>All rights reserved</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

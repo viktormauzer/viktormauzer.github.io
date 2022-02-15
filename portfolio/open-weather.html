@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFFFF" />
+
+    <link rel="apple-touch-icon" href="../img/apple-icon.png" />
+
+    <meta
+      name="description"
+      content="This is a simple weather app I built to show how I make API calls to fetch data from the internet."
+    />
+
+    <meta
+      property="og:title"
+      content="OpenWeather - Viktor Mauzer, iOS Developer"
+    />
+    <meta
+      property="og:description"
+      content="This is a simple weather app I built to show how I make API calls to fetch data from the internet."
+    />
+    <meta
+      property="og:image"
+      content="https://viktorcoding.com/img/open-weather/openweather-share-img.png"
+    />
+    <meta property="og:url" content="https://viktorcoding.com/about.html" />
+    <meta
+      property="og:site_name"
+      content="Portfolio - Viktor Mauzer, iOS Developer"
+    />
+
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>OpenWeather - Viktor Mauzer, iOS Developer</title>
+  </head>
+  <body ontouchstart="">
+    <header class="header">
+      <div class="header__button no__highlights">
+        <div class="header__ham">
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+        </div>
+      </div>
+      <div class="header__bg">&nbsp;</div>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <span>Portfolio</span>
+          <ul>
+            <li>
+              <a class="header__nav-link" href="/portfolio/open-weather.html"
+                >OpenWeather</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header__nav-item">
+          <span>menu</span>
+          <ul>
+            <li>
+              <a class="header__nav-link" href="/index.html">Home</a>
+            </li>
+            <li><a class="header__nav-link" href="../about.html">About</a></li>
+            <li>
+              <a class="header__nav-link" href="../privacy.html">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__nav-item">
+          <span>Contact</span>
+          <ul>
+            <li>
+              <a
+                class="button button-white no__highlights"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://twitter.com/viktormauzer"
+              >
+                <svg class="button-icon">
+                  <use xlink:href="/icons/sprite.svg#vector-twitter"></use>
+                </svg>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <div class="button send-email button-white no__highlights">
+                <svg class="button-icon">
+                  <use xlink:href="/icons/sprite.svg#vector-mail"></use>
+                </svg>
+                Email Address
+              </div>
+              <div class="email-address"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="portfolio__item">
+      <div class="portfolio__item-img">&nbsp;</div>
+      <div class="portfolio__item-container">
+        <div class="portfolio__item-heading">
+          <h1>OpenWeather</h1>
+        </div>
+        <article class="portfolio__item-content">
+          <p>
+            This is a simple weather app I built to show how I make API calls to
+            fetch data from the internet. Users can type in desired city name in
+            the text box and retrieve weather data or they can tap the location
+            icon and get data for their specific location. The API used here is
+            from
+            <a
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://openweathermap.org/"
+              >OpenWeatherMap.org</a
+            >
+            on a free plan for current weather data. This is the
+            <a
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://openweathermap.org/current"
+              >documentation</a
+            >
+            I used to build my data model. The visual design is somewhat
+            inspired by Apple's own weather app.
+          </p>
+          <p>Here are some of the tools and techniques I used:</p>
+          <ul>
+            <li>UIKit (Storyboard)</li>
+            <li>MVC design pattern</li>
+            <li>Delegate/Protocol pattern</li>
+            <li>Async/Await</li>
+            <li>Core Location Framework</li>
+          </ul>
+          <p>
+            Currently, the app has only one view where all data is displayed. I
+            thought dynamically changing the background image based on retrieved
+            weather data was nice so I have chosen a few free pictures from
+            <a
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://pixabay.com/"
+              >pixabay.com</a
+            >
+            to showcase weather conditions.
+          </p>
+          <div class="gallery gallery__3">
+            <img
+              class="lazy-img"
+              data-src="../img/open-weather/clear.png"
+              src="../img/open-weather/lazy.png"
+              alt="screenshot"
+            />
+            <img
+              class="lazy-img"
+              data-src="../img/open-weather/clouds.png"
+              src="../img/open-weather/lazy.png"
+              alt="screenshot"
+            />
+            <img
+              class="lazy-img"
+              data-src="../img/open-weather/snow.png"
+              src="../img/open-weather/lazy.png"
+              alt="screenshot"
+            />
+          </div>
+          <p>
+            When I implemented the visual design in the interface builder, I
+            thought about different screen sizes, so I made sure the background,
+            the text and the list all make sense on different devices by using
+            appropriate constraints. Here is an example of how it looks on an
+            iPad:
+          </p>
+          <img
+            data-src="../img/open-weather/ipad.jpeg"
+            src="../img/open-weather/ipad-lazy.jpg"
+            alt="screenshot"
+          />
+          <h2>What I learned building this app</h2>
+          <p>
+            As this is my first app I made for this portfolio, there were a few
+            snags, but I ended up learning these techniques:
+          </p>
+          <ul>
+            <li>
+              How to make a data model based on API source documentation with
+              computed properties to handle data types and optionals for easy
+              displaying in the UI
+            </li>
+            <li>How to use async/await to run tasks asynchronously</li>
+            <li>How to use device location and ask user for permission</li>
+            <li>
+              How to organise the project to conform to the MVC design pattern
+              for scalability and easier maintenance
+            </li>
+            <li>
+              How to encode the URL to accept spaces and different characters
+              from a string (for example if the user enters “New York” as a city
+              name)
+            </li>
+          </ul>
+          <p>
+            I will continue to improve this app over time and update the repo
+            and this page accordingly. Special thanks to
+            <a
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://twitter.com/twostraws"
+              >@twostraws</a
+            >
+            and
+            <a
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://twitter.com/yu_angela"
+              >@yu_angela</a
+            >
+            for providing the online teaching materials that helped me a lot
+            learning swift and iOS development, and also to all the nice people
+            on twitter and stackoverflow 😊
+          </p>
+          <p>Check out the project on my github repo:</p>
+          <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/openweather-UIKit"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <span>All rights reserved</span>
+        <a href="../privacy.html">Privacy</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
