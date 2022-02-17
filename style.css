@@ -777,7 +777,7 @@ article .github__button-icon:not(:last-child) {
 
 @media only screen and (max-width: 1000px) {
   .hero {
-    min-height: 100vh;
+    min-height: 60rem;
   }
 
   .hero__text {
@@ -790,6 +790,10 @@ article .github__button-icon:not(:last-child) {
 }
 
 @media only screen and (max-width: 600px) {
+  .hero {
+    min-height: 100vh;
+  }
+
   .hero__text {
     left: 3rem;
     margin-right: 3rem;
