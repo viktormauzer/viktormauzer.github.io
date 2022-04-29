@@ -907,6 +907,48 @@ article .github__button-icon:not(:last-child) {
   }
 }
 
+/* STRANGER CHATS */
+.stranger__chats {
+  background-image: url(/img/stranger-chats/web-mockup.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.stranger__chats-info {
+  color: white;
+  max-width: 35rem;
+  text-align: center;
+  margin: 0 3rem;
+}
+
+.stranger__chats-info h2 {
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+.stranger__chats-info p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 3rem;
+  margin: 4rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .stranger__chats {
+    background-image: url(/img/stranger-chats/web-mockup-mobile.png);
+  }
+}
+
 /* OPEN WEATHER */
 .open__weather {
   background-image: -o-linear-gradient(45deg, #002345, #2d567d);
