@@ -188,13 +188,11 @@ article .github__button-icon:not(:last-child) {
 }
 
 .button-dark {
-  background-image: -o-linear-gradient(175deg, #002345, #2d567d);
-  background-image: linear-gradient(275deg, #002345, #2d567d);
+  background-color: rgb(195, 30, 0);
 }
 
 .button-white {
-  background-image: -o-linear-gradient(175deg, #fff, #fff);
-  background-image: linear-gradient(275deg, #fff, #fff);
+  background-color: white;
   color: black;
 }
 
@@ -205,6 +203,13 @@ article .github__button-icon:not(:last-child) {
   color: white;
 }
 
+.button-hollow-dark {
+  border: 2px solid black;
+  border-radius: 100rem;
+  text-decoration: none;
+  color: black;
+}
+
 @media (hover: hover) {
   .button-white:hover {
     -webkit-transform: translate(0, -3px);
@@ -213,8 +218,7 @@ article .github__button-icon:not(:last-child) {
     color: white;
     -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
-    background-image: -o-linear-gradient(175deg, #002345, #2d567d);
-    background-image: linear-gradient(275deg, #002345, #2d567d);
+    background-color: rgb(195, 30, 0);
   }
 
   .button-white:hover > .button-icon {
@@ -227,6 +231,12 @@ article .github__button-icon:not(:last-child) {
     transform: translate(0, -3px);
     letter-spacing: 2px;
     -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .button-hollow-dark:hover {
+    transform: translate(0, -3px);
+    letter-spacing: 2px;
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
   }
 
@@ -258,6 +268,7 @@ article .github__button-icon:not(:last-child) {
 
 .button-icon-light {
   fill: white;
+  margin-right: 1rem;
 }
 
 .github__button-icon {
@@ -426,7 +437,7 @@ article .github__button-icon:not(:last-child) {
 .slider__indicator-dot {
   width: 0.6rem;
   height: 0.6rem;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 100rem;
   text-align: center;
   -webkit-transition: all 0.2s;
@@ -435,7 +446,7 @@ article .github__button-icon:not(:last-child) {
 }
 
 .slider__indicator-dot-selected {
-  background-color: white;
+  background-color: black;
 }
 
 .slider__indicator-dot:not(:last-child) {
@@ -451,7 +462,7 @@ article .github__button-icon:not(:last-child) {
   height: 6rem;
   border: 2px solid white;
   border-radius: 100rem;
-  background-color: #002345;
+  background-color: rgb(44, 44, 46);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,8 +529,11 @@ article .github__button-icon:not(:last-child) {
 }
 
 .header__bg {
+  /*
   background-image: -o-linear-gradient(175deg, #002345, #2d567d);
   background-image: linear-gradient(275deg, #002345, #2d567d);
+  */
+  background-color: rgb(44, 44, 46);
   width: 4rem;
   height: 4rem;
   position: fixed;
@@ -951,8 +965,7 @@ article .github__button-icon:not(:last-child) {
 
 /* OPEN WEATHER */
 .open__weather {
-  background-image: -o-linear-gradient(45deg, #002345, #2d567d);
-  background-image: linear-gradient(45deg, #002345, #2d567d);
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,7 +980,7 @@ article .github__button-icon:not(:last-child) {
 }
 
 .open__weather-info {
-  color: white;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1024,6 +1037,10 @@ article .github__button-icon:not(:last-child) {
 .open__weather-slider-container img {
   display: block;
   max-width: 100%;
+}
+
+.open__weather .slider__icon {
+  fill: rgba(0, 0, 0, 0.6);
 }
 
 .open__weather .p__figure-large {
