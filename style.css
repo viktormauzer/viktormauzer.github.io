@@ -158,18 +158,23 @@ article .github__button-icon:not(:last-child) {
   width: 33%;
 }
 
+.gallery__2 > * {
+  width: 50%;
+}
+
 @media only screen and (max-width: 500px) {
-  .gallery__3 > * {
+  .gallery__3 > *,
+  .gallery__2 > * {
     width: 100%;
   }
 }
 
 .button {
-  min-height: 3.5rem;
+  min-height: 4.5rem;
   min-width: 6rem;
   padding: 1rem;
   border-radius: 100rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,8 +240,11 @@ article .github__button-icon:not(:last-child) {
   }
 
   .button-hollow-dark:hover {
+    -webkit-transform: translate(0, -3px);
+    -ms-transform: translate(0, -3px);
     transform: translate(0, -3px);
     letter-spacing: 2px;
+    -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
   }
 
@@ -529,10 +537,6 @@ article .github__button-icon:not(:last-child) {
 }
 
 .header__bg {
-  /*
-  background-image: -o-linear-gradient(175deg, #002345, #2d567d);
-  background-image: linear-gradient(275deg, #002345, #2d567d);
-  */
   background-color: rgb(44, 44, 46);
   width: 4rem;
   height: 4rem;
@@ -698,6 +702,7 @@ article .github__button-icon:not(:last-child) {
   position: absolute;
   left: 50%;
   bottom: 2rem;
+  z-index: 1;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
@@ -938,6 +943,10 @@ article .github__button-icon:not(:last-child) {
   align-items: center;
 }
 
+.stranger__chats-img {
+  background-image: url(/img/stranger-chats/web-mockup-bg.png);
+}
+
 .stranger__chats-info {
   color: white;
   max-width: 35rem;
@@ -977,6 +986,10 @@ article .github__button-icon:not(:last-child) {
   justify-content: space-evenly;
   min-height: 98rem;
   padding: 3rem;
+}
+
+.open__weather-img {
+  background-image: url(/img/open-weather/backgroundmockup.jpeg);
 }
 
 .open__weather-info {
@@ -1081,7 +1094,8 @@ article .github__button-icon:not(:last-child) {
   }
 
   .open__weather-info {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 
   .open__weather-cta {
@@ -1118,7 +1132,6 @@ article .github__button-icon:not(:last-child) {
 }
 
 .portfolio__item-img {
-  background-image: url(/img/open-weather/backgroundmockup.jpeg);
   background-size: cover;
   width: 100%;
   height: 40rem;
