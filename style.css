@@ -123,17 +123,17 @@ article h6 {
 }
 
 article a {
-  color: #002345;
+  color: black;
   text-decoration: none;
-  border-bottom: 1px solid #002345;
+  border-bottom: 1px solid black;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 article a:hover {
-  color: #2d567d;
-  border-bottom: 1px solid #2d567d;
+  color: rgb(195, 30, 0);
+  border-bottom: 1px solid rgb(195, 30, 0);
 }
 
 article img {
