@@ -241,7 +241,7 @@
     "description": "Aenean mollis sapien sit amet pharetra tincidunt. Aenean consectetur sit amet urna ac iaculis. Aenean bibendum nunc purus, sed accumsan augue facilisis vitae. Vivamus id nulla vestibulum, auctor ante at, hendrerit nisi. Nulla id dui neque. Sed in tincidunt tortor, eu posuere elit.",
     "category": ["Hats"],
     "price": 14.99,
-    "stock": 36,
+    "stock": 0,
     "image": "https://viktormauzer.github.io/files/portfolio-shop/img/hats/WorthyHat.jpg",
     "imageGallery": [
       "https://viktormauzer.github.io/files/portfolio-shop/img/hats/WorthyHat.jpg",
