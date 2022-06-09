@@ -1023,8 +1023,9 @@ article .github__button-icon:not(:last-child) {
   .stayfitshop {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding: 4rem 0;
   }
 
   .stayfitshop__info {
