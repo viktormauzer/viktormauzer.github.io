@@ -34,7 +34,7 @@
     <link rel="apple-touch-icon" href="img/apple-icon.png" />
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
 
-    <link rel="stylesheet" href="style.css?v=1.4" />
+    <link rel="stylesheet" href="style.css?v=1.5" />
     <title>Portfolio - Viktor Mauzer, iOS Developer</title>
   </head>
   <body ontouchstart="">
@@ -124,15 +124,18 @@
         alt="p-figure-small"
         class="p__figure-small"
       />
-      <div class="hero__text">
-        <span class="hero__text-intro">Hi, I'm</span>
-        <h1>Viktor Mauzer</h1>
-        <span class="hero__text-desc">SWIFT iOS Developer</span>
-        <img
-          src="img/decoration/line-dots.png"
-          alt="line-dots"
-          class="line__dots"
-        />
+      <div class="hero__info">
+        <img class="hero__info-img" src="img/profile-pic.jpg" alt="profile__photo">
+        <div class="hero__text">
+          <span class="hero__text-intro">Hi, I'm</span>
+          <h1>Viktor Mauzer</h1>
+          <span class="hero__text-desc">SWIFT iOS Developer</span>
+          <img
+            src="img/decoration/line-dots.png"
+            alt="line-dots"
+            class="line__dots"
+          />
+        </div>
       </div>
       <div class="hero__cta">
         <span>portfolio</span>
@@ -142,7 +145,6 @@
           </svg>
         </div>
       </div>
-      <img src="img/decoration/ios.png" alt="ios" class="ios__image" />
     </section>
 
     <section class="stayfitshop">
@@ -354,6 +356,51 @@
           />
         </div>
         <div class="slider__indicator"></div>
+      </div>
+    </section>
+
+    <section class="moreApps">
+      <h2>More Apps</h2>
+      <div class="moreApps__grid">
+
+        <div class="moreApps__item">
+          <div class="moreApps__item-logo">
+            <img src="img/bmi-calculator/BMICalculator-icon.jpg" alt="BMICalculatorLogo">
+          </div>
+          <div class="moreApps__item-info">
+            <h4>BMI Calculator</h4>
+            <p>Easy to use app I made as homework for iOS development course. Users can set their weight & height using sliders and calculate their body mass index (BMI). See it on GitHub:</p>
+            <div class="separator dark-bg">&nbsp;</div>
+            <div class="moreApps__item-buttons">
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" href="https://github.com/viktormauzer/BMICalculator-iOS-UIKit" class="text__button">UIKit</a>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" href="https://github.com/viktormauzer/BMICalculator-SwiftUI" class="text__button">SwiftUI</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="moreApps__item">
+          <div class="moreApps__item-logo">
+            <img src="img/friendface/friend-face-icon.png" alt="FriendFaceLogo">
+          </div>
+          <div class="moreApps__item-info">
+            <h4>FriendFace Challenge</h4>
+            <p>This is my solution to Paul Hudson's 100DaysOfSwiftUI course challenge. App loads data from a sample JSON file and displays it using async/await.</p>
+            <div class="separator dark-bg">&nbsp;</div>
+            <div class="moreApps__item-buttons">
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" href="https://github.com/viktormauzer/FriendFaceChallenge" class="text__button">GitHub</a>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" href="https://medium.com/@viktormauzer/solving-friendface-100daysofswiftui-challenge-day-60-61-754309014448" class="text__button">Medium</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
