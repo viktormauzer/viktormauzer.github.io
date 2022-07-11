@@ -97,6 +97,10 @@ body {
 
 /* global */
 
+article {
+  margin-bottom: 12rem;
+}
+
 article p,
 article ul,
 article ol,
@@ -664,6 +668,11 @@ article .github__button-icon:not(:last-child) {
 
 /* FOOTER */
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 600;
   min-height: 8rem;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
 }
@@ -696,11 +705,21 @@ article .github__button-icon:not(:last-child) {
   color: black;
 }
 
+@media only screen and (max-width: 600px) {
+  .footer {
+    min-height: 6rem;
+  }
+
+  .footer__content {
+    min-height: 6rem;
+  }
+}
+
 /* HERO */
 .hero {
   position: relative;
   width: 100%;
-  min-height: 98rem;
+  min-height: 92vh;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -876,10 +895,6 @@ article .github__button-icon:not(:last-child) {
 }
 
 @media only screen and (max-width: 1000px) {
-  .hero {
-    min-height: 60rem;
-  }
-
   .hero__info {
     left: 8rem;
   }
@@ -923,7 +938,7 @@ article .github__button-icon:not(:last-child) {
 
 @media only screen and (max-width: 600px) {
   .hero {
-    min-height: 100vh;
+    min-height: 95vh;
   }
 
   .hero__info {
@@ -1360,7 +1375,7 @@ article .github__button-icon:not(:last-child) {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 
 .moreApps h2 {
