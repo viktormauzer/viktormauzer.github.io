@@ -673,7 +673,7 @@ article .github__button-icon:not(:last-child) {
   width: 100%;
   background-color: white;
   z-index: 600;
-  min-height: 8rem;
+  min-height: 7vh;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -688,7 +688,7 @@ article .github__button-icon:not(:last-child) {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 8rem;
+  min-height: 7vh;
 }
 
 .footer__content span {
@@ -707,11 +707,11 @@ article .github__button-icon:not(:last-child) {
 
 @media only screen and (max-width: 600px) {
   .footer {
-    min-height: 6rem;
+    min-height: 6vh;
   }
 
   .footer__content {
-    min-height: 6rem;
+    min-height: 6vh;
   }
 }
 
@@ -719,102 +719,153 @@ article .github__button-icon:not(:last-child) {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 92vh;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
-.hero__info {
+  min-height: 93vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: absolute;
-  top: 35%;
-  left: 17rem;
-}
-
-.hero__info-img {
-  display: block;
-  border-radius: 100rem;
-  max-width: 25rem;
-  max-height: 25rem;
-  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
-  -webkit-animation-name: slideInFromLeft;
-  animation-name: slideInFromLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
-.hero__text {
-  padding-left: 8rem;
-}
-
-.hero__text-intro {
-  font-size: 4.8rem;
-  display: block;
-  -webkit-animation-name: slideInFromLeft;
-  animation-name: slideInFromLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
-.hero__text h1 {
-  font-size: 6.6rem;
-  font-weight: 400;
-  margin: 1rem 0;
-  -webkit-animation-name: slideInFromLeft;
-  animation-name: slideInFromLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.hero__text-desc {
-  font-size: 5.3rem;
-  font-style: italic;
-  font-weight: 100;
-  display: block;
-  margin-bottom: 1.2rem;
-  -webkit-animation-name: slideInFromLeft;
-  animation-name: slideInFromLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.hero__cta {
-  position: absolute;
-  left: 50%;
-  bottom: 2rem;
-  z-index: 1;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  overflow: hidden;
+}
+
+.hero .grid__dots {
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+}
+
+.hero .decoration__element {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(255, 255, 255, 1)),
+    to(rgba(236, 236, 236, 1))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(236, 236, 236, 1) 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(236, 236, 236, 1) 100%
+  );
+  position: absolute;
+  bottom: -75%;
+  right: -10%;
+  width: 100%;
+  height: 100rem;
+  border-radius: 62% 38% 56% 44% / 43% 27% 73% 57%;
+  z-index: -1;
+  -webkit-animation-name: pulseUpAndDown;
+  animation-name: pulseUpAndDown;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.hero .decoration__element2 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(255, 255, 255, 1)),
+    to(rgba(224, 224, 224, 1))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(224, 224, 224, 1) 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(224, 224, 224, 1) 100%
+  );
+  position: absolute;
+  bottom: -80%;
+  right: -15%;
+  width: 100%;
+  height: 100rem;
+  border-radius: 62% 38% 56% 44% / 43% 27% 73% 57%;
+  z-index: -1;
+}
+
+.hero__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.hero__info-img {
+  max-width: 20rem;
+  max-height: 20rem;
+  border-radius: 100rem;
+  border: 3px solid white;
+  -webkit-box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.18);
+  box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.18);
+}
+
+.hero__text {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hero__text h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hero__cta {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .hero__cta span {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -832,176 +883,88 @@ article .github__button-icon:not(:last-child) {
   height: 3rem;
 }
 
-.hero__text .line__dots {
-  position: absolute;
-  left: 29rem;
-  -webkit-animation-name: slideInFromLeft;
-  animation-name: slideInFromLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.hero .grid__dots {
-  position: absolute;
-  top: -1rem;
-  left: -2rem;
-}
-
-.hero .ios__image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.hero .p__figure-large {
-  position: absolute;
-  top: 4rem;
-  right: 8rem;
-}
-
-.hero .p__figure-small {
-  position: absolute;
-  top: 10rem;
-  right: 37rem;
-}
-
-@media only screen and (max-width: 1400px) {
-  .hero .ios__image {
-    position: absolute;
-    width: 30rem;
-    bottom: 0;
-    right: 0;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .hero .p__figure-large {
-    display: none;
+@media only screen and (max-width: 700px) {
+  .hero .decoration__element {
+    bottom: -85%;
   }
 
-  .hero .p__figure-small {
-    display: none;
-  }
-
-  .hero__info {
-    left: 10rem;
-  }
-
-  .hero__text {
-    padding-left: 4rem;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .hero__info {
-    left: 8rem;
-  }
-
-  .hero .ios__image {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .hero__info-img {
-    width: 13rem;
-    height: 13rem;
-  }
-
-  .hero__text {
-    left: 3rem;
-    margin-right: 2.5rem;
-  }
-
-  .hero__text span {
-    font-size: 3rem;
-  }
-
-  .hero__text h1 {
-    font-size: 4.2rem;
-  }
-
-  .hero__text-desc {
-    font-size: 2.2rem;
-  }
-
-  .hero__cta span {
-    font-size: 2.4rem;
-  }
-
-  .hero__info .line__dots {
-    left: 15rem;
+  .hero .decoration__element2 {
+    bottom: -90%;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .hero {
-    min-height: 95vh;
-  }
-
-  .hero__info {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    left: 0;
-    padding-right: 3rem;
-  }
-
-  .hero__info .line__dots {
-    left: 0;
+    min-height: 94vh;
   }
 
   .hero__info-img {
-    position: absolute;
-    top: -6rem;
-    right: 3rem;
-    width: 8rem;
-    height: 8rem;
-  }
-
-  .hero__icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    max-width: 15rem;
+    max-height: 15rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .hero__text span {
-    font-size: 3rem;
+  .hero .decoration__element {
+    display: none;
   }
 
-  .hero__text h1 {
-    font-size: 4rem;
-  }
-
-  .hero__text-desc {
-    font-size: 3rem;
-  }
-
-  .hero__text .line__dots {
-    left: -6rem;
-  }
-
-  .hero .grid__dots {
-    position: absolute;
-    left: -12rem;
-  }
-
-  .hero .ios__image {
-    bottom: 15rem;
-    width: 25rem;
+  .hero .decoration__element2 {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .hero .ios__image {
-    display: none;
+@-webkit-keyframes pulseUpAndDown {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  25% {
+    -webkit-transform: translate(-3%);
+    transform: translate(-3%);
+  }
+
+  50% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  75% {
+    -webkit-transform: translate(3%);
+    transform: translate(3%);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes pulseUpAndDown {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  25% {
+    -webkit-transform: translate(-3%);
+    transform: translate(-3%);
+  }
+
+  50% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  75% {
+    -webkit-transform: translate(3%);
+    transform: translate(3%);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -1030,30 +993,6 @@ article .github__button-icon:not(:last-child) {
     opacity: 1;
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
-  }
-}
-
-@-webkit-keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-  }
-
-  100% {
-    -webkit-transform: translate((0, 0));
-    transform: translate((0, 0));
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-  }
-
-  100% {
-    -webkit-transform: translate((0, 0));
-    transform: translate((0, 0));
   }
 }
 
