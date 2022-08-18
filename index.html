@@ -34,7 +34,7 @@
     <link rel="apple-touch-icon" href="img/apple-icon.png" />
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
 
-    <link rel="stylesheet" href="style.css?v=1.7" />
+    <link rel="stylesheet" href="style.css?v=1.8" />
     <title>Portfolio - Viktor Mauzer, iOS Developer</title>
   </head>
   <body ontouchstart="">
@@ -355,82 +355,144 @@
       </div>
     </section>
 
-    <section class="moreApps">
-      <h2>More Apps</h2>
-      <div class="moreApps__grid">
+    <section class="showcase">
+      <h2 class="showcase__title">Showcase</h2>
 
-        <div class="moreApps__item">
-          <div class="moreApps__item-logo">
-            <img src="img/bmi-calculator/BMICalculator-icon.jpg" alt="BMICalculatorLogo">
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/custom-tabbar-thumb.jpeg" src="img/showcase/custom-tabbar-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>Custom TabBar</h3>
+            <p>This custom TabBar is made with SwiftUI buttons. Works on all device sizes and orientations. There is a state property "selectedTab" that tracks which tab button is pressed and switches over the enum to show the corresponding view as well as style the buttons.</p>
+            <p>Spring animations added to tabbar buttons for extra flare.</p>
+            <span>SwiftUI</span>
+            <span>custom tabbar</span>
           </div>
-          <div class="moreApps__item-info">
-            <h4>BMI Calculator</h4>
-            <p>Easy to use app I made as homework for iOS development course. Users can set their weight & height using sliders and calculate their body mass index (BMI). See it on GitHub:</p>
-            <div class="separator dark-bg">&nbsp;</div>
-            <div class="moreApps__item-buttons">
-              <a aria-label="Github"
-              rel="noreferrer noopener"
-              target="_blank" href="https://github.com/viktormauzer/BMICalculator-iOS-UIKit" class="text__button">UIKit</a>
-              <a aria-label="Github"
-              rel="noreferrer noopener"
-              target="_blank" href="https://github.com/viktormauzer/BMICalculator-SwiftUI" class="text__button">SwiftUI</a>
-            </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/CustomTabBar"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
           </div>
         </div>
+      </div>
 
-        <div class="moreApps__item">
-          <div class="moreApps__item-logo">
-            <img src="img/friendface/friend-face-icon.png" alt="FriendFaceLogo">
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/ytfilter-thumb.jpeg" src="img/showcase/ytfilter-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>YTFilter</h3>
+            <p>Built using SwiftUI where the app filters content in a list based on a button press similar to the YouTube app on iOS (only the content is in image form, not video).</p>
+            <p> All categories are added to the selector automatically based on the included data. By tapping on each category, the list shows coresponding data.</p>
+            <span>SwiftUI</span>
+            <span>customized list view</span>
+            <span>MapKit</span>
           </div>
-          <div class="moreApps__item-info">
-            <h4>FriendFace Challenge</h4>
-            <p>This is my solution to Paul Hudson's 100DaysOfSwiftUI course challenge. App loads data from a sample JSON file and displays it using async/await.</p>
-            <div class="separator dark-bg">&nbsp;</div>
-            <div class="moreApps__item-buttons">
-              <a aria-label="Github"
-              rel="noreferrer noopener"
-              target="_blank" href="https://github.com/viktormauzer/FriendFaceChallenge" class="text__button">GitHub</a>
-              <a aria-label="Medium"
-              rel="noreferrer noopener"
-              target="_blank" href="https://medium.com/@viktormauzer/solving-friendface-100daysofswiftui-challenge-day-60-61-754309014448" class="text__button">Medium</a>
-            </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/YTFilter"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
           </div>
         </div>
+      </div>
 
-        <div class="moreApps__item">
-          <div class="moreApps__item-logo">
-            <img src="img/the-slider/app-icon-thumbnail.png" alt="TheSliderLogo">
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/side-menu-thumb.jpeg" src="img/showcase/side-menu-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>SideMenu</h3>
+            <p>UIKit based side menu activated by button press for a Swift iOS app. To showcase the feature, I made an "email-like" app where users can open the menu by pressing the navigation bar button.</p>
+            <p>The menu slides from the left and shows possible categories to filter shown messages. To close the menu, users can tap on a category, tap at the empty spaces to the right or drag the menu to the left.</p>
+            <span>UIKit</span>
+            <span>Storyboard</span>
+            <span>xib</span>
           </div>
-          <div class="moreApps__item-info">
-            <h4>TheSlider</h4>
-            <p>A simple content slider built using SwiftUI with the help of TabView and its custom TabViewStyle with my own custom index display.</p>
-            <div class="separator dark-bg">&nbsp;</div>
-            <div class="moreApps__item-buttons">
-              <a aria-label="Github"
-              rel="noreferrer noopener"
-              target="_blank" href="https://github.com/viktormauzer/TheSlider" class="text__button">GitHub</a>
-            </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/SideMenu"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
           </div>
         </div>
+      </div>
 
-        <div class="moreApps__item">
-          <div class="moreApps__item-logo">
-            <img src="img/side-menu/side-menu-icon-thumb.png" alt="SidemenuLogo">
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/theslider-thumb.jpeg" src="img/showcase/theslider-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>TheSlider</h3>
+            <p>This is a simple content slider built using SwiftUI with the help of TabView and its custom TabViewStyle. I decided not to use the default index display mode so I made my own.</p>
+            <p>The slider works by dragging the image on top and the rest of the content updates by updating the selectedIndex property which is bound in TabView. This also updates the custom index display which I called the SlideIndicatorView.</p>
+            <span>SwiftUI</span>
+            <span>custom index display mode</span>
           </div>
-          <div class="moreApps__item-info">
-            <h4>SideMenu</h4>
-            <p>UIKit based side menu feature built using storyboards (xib files) showcased in an "email-like" app.</p>
-            <div class="separator dark-bg">&nbsp;</div>
-            <div class="moreApps__item-buttons">
-              <a aria-label="Github"
-              rel="noreferrer noopener"
-              target="_blank" href="https://github.com/viktormauzer/SideMenu" class="text__button">GitHub</a>
-            </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/TheSlider"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
           </div>
         </div>
-
       </div>
     </section>
+
 
     <footer class="footer">
       <div class="footer__content">
