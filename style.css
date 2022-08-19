@@ -765,7 +765,7 @@ article .github__button-icon:not(:last-child) {
     rgba(236, 236, 236, 1) 100%
   );
   position: absolute;
-  bottom: -75%;
+  bottom: -75rem;
   right: -10%;
   width: 100%;
   height: 100rem;
@@ -798,7 +798,7 @@ article .github__button-icon:not(:last-child) {
     rgba(224, 224, 224, 1) 100%
   );
   position: absolute;
-  bottom: -80%;
+  bottom: -80rem;
   right: -15%;
   width: 100%;
   height: 100rem;
@@ -881,6 +881,17 @@ article .github__button-icon:not(:last-child) {
 .hero__icon {
   width: 3rem;
   height: 3rem;
+}
+
+@media only screen and (max-height: 550px) {
+  .hero__info-img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .hero__cta span {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1146,156 +1157,6 @@ article .github__button-icon:not(:last-child) {
   }
 }
 
-/* OPEN WEATHER */
-.open__weather {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  min-height: 98rem;
-  padding: 3rem;
-}
-
-.open__weather-img {
-  background-image: url(/img/open-weather/backgroundmockup.jpeg);
-}
-
-.open__weather-info {
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 43rem;
-  position: relative;
-}
-
-.open__weather-info h2 {
-  font-weight: 400;
-  font-size: 3rem;
-}
-
-.open__weather-info p {
-  line-height: 3rem;
-  margin: 4rem 0;
-}
-
-.open__weather-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.open__weather-cta a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.open__weather-cta a:not(:last-child) {
-  margin-right: 1rem;
-}
-
-.open__weather-slider-container {
-  width: 33rem;
-}
-
-.open__weather-slider-container img {
-  display: block;
-  max-width: 100%;
-}
-
-.open__weather .slider__icon {
-  fill: rgba(0, 0, 0, 0.6);
-}
-
-.open__weather .p__figure-large {
-  position: absolute;
-  bottom: -28rem;
-  left: 32rem;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.open__weather .p__figure-small {
-  position: absolute;
-  top: -13rem;
-  left: -11rem;
-}
-
-@media only screen and (max-width: 1100px) {
-  .open__weather .p__figure-large {
-    left: 5rem;
-  }
-
-  .open__weather .p__figure-small {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    top: -25rem;
-    left: 20rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .open__weather {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .open__weather-info {
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-  }
-
-  .open__weather-cta {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .open__weather-cta a:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .open__weather .p__figure-large {
-    display: none;
-  }
-
-  .open__weather .p__figure-small {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .open__weather-slider-container {
-    width: 28rem;
-  }
-}
-
 /* SHOWCASE SECTION */
 .showcase {
   display: flex;
@@ -1303,6 +1164,7 @@ article .github__button-icon:not(:last-child) {
   align-items: center;
   flex-direction: column;
   margin-bottom: 10rem;
+  margin-top: 8rem;
 }
 
 .showcase__title {
@@ -1352,6 +1214,20 @@ article .github__button-icon:not(:last-child) {
 .showcase__item-info-text p {
   line-height: 3rem;
   margin-bottom: 1rem;
+}
+
+.showcase__item-info-text a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.showcase__item-info-text a:hover {
+  color: rgb(195, 30, 0);
+  border-bottom: 1px solid rgb(195, 30, 0);
 }
 
 .showcase__item-info-text span {
