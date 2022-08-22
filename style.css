@@ -1184,6 +1184,7 @@ article .github__button-icon:not(:last-child) {
 .showcase__item-video {
   width: 40%;
   padding: 2rem;
+  padding-bottom: 1.7rem;
 }
 
 .showcase__item-video video {
